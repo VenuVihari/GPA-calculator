@@ -8,19 +8,17 @@ body {
 
 header {
     background-color: aqua;
-    margin: 0; 
-    padding: 0; 
-    margin-top: 0;
     min-height: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Added to ensure padding doesn't affect element sizes */
 }
 
 #gpadiv {
@@ -64,4 +62,5 @@ footer {
     margin-top: auto;
     font-weight: bold;
     background-color: whitesmoke;
+    width: 100%; /* Added to ensure full width */
 }
