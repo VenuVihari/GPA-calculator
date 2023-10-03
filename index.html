@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <meta name="description" content="Calculate your GPA using credits and grades">
+    <meta name="keywords" content="GPA,calculate gpa,GPA calculator">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content-wrapper">
+    <header>
+        <div>
+            <h1>GPA Calculator</h1>
+        </div>
+    </header>
+    <div id="gpadiv">
+        <form id="gpa" onsubmit="event.preventDefault(); getcg()">
+            Enter number of courses <br><input id="num" type="number" oninput="checkMinValue()" min="1"><br>
+            <input id="c" type="button" value="calculate" onclick="getcg()">
+        </form>
+        <div id="cgs"></div>
+    </div>
+    <footer>
+        GPA calculator©2023
+    </footer>
+</body>
+</html>
